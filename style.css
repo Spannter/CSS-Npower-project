@@ -4,7 +4,7 @@ body{
     flex-direction: row;
     margin: 0;
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
     
@@ -28,6 +28,11 @@ body{
     background-color: blueviolet;
     width: 100%;
 }
+button {
+    border-radius: 10%;
+
+}
+
 button:hover {
     background-color: hsla(192 61% 49% / 0.64);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -38,13 +43,13 @@ button:hover {
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-    padding: 10%;
+    padding: 0%;
 }
 a{
     padding: 5px;
     margin: 5px;
 }
-.navigation {
+.section-1 {
     display: flex;
     background-color: rgb(0, 0, 0);
   -webkit-text-fill-color: white;
@@ -58,6 +63,7 @@ a{
     -webkit-text-fill-color: rgb(9, 9, 9);
     flex-direction: column;
     width: 100%;
+    padding: 40px;
 }
 .selected {
     background-color: white;
@@ -69,12 +75,28 @@ a{
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    padding: 40px;
 }
 #email { 
     justify-content: center;
     background-color: aqua;
+    height: 100px;
     width: 100%;
     resize: vertical;
 }
 
-
+@media (max-width: 768px) {
+   body {
+    flex-direction: column;
+   }
+   .section-1 {
+    padding: 20px;
+    width: 100%;
+   }
+   .section-2 {
+    padding: 20px;
+   }
+   .section-3 {
+    padding: 20px;
+   }
+}
